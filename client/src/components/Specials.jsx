@@ -1,4 +1,4 @@
-import SpecialCard from '../components/specialCard.jsx'
+import SpecialCard from '../components/SpecialCard.jsx'
 import { useState, useEffect } from "react";
 
 function Specials() {
