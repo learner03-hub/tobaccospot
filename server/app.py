@@ -5,6 +5,9 @@ from models import Product, Special
 from datetime import date
 from flask_cors import CORS
 from flask_migrate import Migrate
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 app.config.from_object(Config)
