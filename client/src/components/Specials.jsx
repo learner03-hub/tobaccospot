@@ -5,7 +5,7 @@ function Specials() {
     const [ specials, setSpecials ] = useState([])
     
         useEffect(() => {
-            fetch('api/specials')
+            fetch(`${import.meta.env.VITE_API_URL}/api/specials`)
             .then(res => res.json())
             .then(data => setSpecials(data))
         }, [])
