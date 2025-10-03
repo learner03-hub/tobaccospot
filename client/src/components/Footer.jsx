@@ -51,7 +51,7 @@ const Footer = () =>
               <PhoneIcon className="w-6 h-6 text-white" />
               </button>
               <p className="text-center text-gray-400 text-l">
-                (708) 328-1293
+                (708) 886-5204
               </p>
             </div>
             <div className='flex justify-center items-center'>

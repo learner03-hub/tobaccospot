@@ -12,7 +12,7 @@ function Contact() {
         </div>
         <div className='flex flex-col w-full justify-center items-start gap-3'>
                 <ContactCard iconName='location' address='Address' text='14737 S Kedzie Ave,' subText='Posen, IL 60469'/>
-                <ContactCard iconName='phone' address='Phone' text='(708) 328-1293' subText='Call us anytime during business hours'/>
+                <ContactCard iconName='phone' address='Phone' text='(708) 886-5204' subText='Call us anytime during business hours'/>
                 <ContactCard iconName='email' address='Email' text='tobacco147th@gmail.com' subText="We'll respond within 24 hours"/>
         </div>
         <div className="relative w-full flex justify-center items-center">
