@@ -8,7 +8,10 @@ function Specials() {
             fetch(`${import.meta.env.VITE_API_URL}/api/specials`)
             .then(res => res.json())
             .then(data => setSpecials(data))
+            
         }, [])
+
+        console.log(specials)
 
     return (
         <div className="flex flex-col justify-center items-center gap-2 mt-125 bg-black/20 p-4">
