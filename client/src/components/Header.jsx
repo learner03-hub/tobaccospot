@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-// import routes from '../routes'; // Optional, if using route constants
+import { NavLink, Link } from 'react-router-dom';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,10 +30,10 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-4">
-          <Link to="/" className="hover:underline text-green-600 font-bold">Home</Link>
-          <Link to="/products" className="hover:underline ">Products</Link>
-          <Link to="/contact" className="hover:underline ">Contact</Link>
-          <Link to="/about" className="hover:underline ">About</Link>
+          <NavLink to="/" className={({ isActive }) => `font-bold ${isActive ? 'text-green-600 underline' : 'text-gray-600 hover:underline'}`}>Home</NavLink>
+          <NavLink to="/products" className={({ isActive }) => `font-bold ${isActive ? 'text-green-600 underline' : 'text-gray-600 hover:underline'}`}>Products</NavLink>
+          <NavLink to="/contact" className={({ isActive }) => `font-bold ${isActive ? 'text-green-600 underline' : 'text-gray-600 hover:underline'}`}>Contact</NavLink>
+          <NavLink to="/about" className={({ isActive }) => `font-bold ${isActive ? 'text-green-600 underline' : 'text-gray-600 hover:underline'}`}>About</NavLink>
         </nav>
       </div>
 

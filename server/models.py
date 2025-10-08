@@ -9,6 +9,7 @@ class Product(db.Model):
     description = db.Column(db.Text)
     image_url = db.Column(db.String(255))
     category = db.Column(db.String(50))  # e.g. "vape", "pipe", etc.
+    flavors = db.Column(JSON)
 
     def to_dict(self):
         return {
@@ -16,7 +17,8 @@ class Product(db.Model):
             "name": self.name,
             "description": self.description,
             "price": self.price,
-            "image_url": self.image_url
+            "image_url": self.image_url,
+            "flavors": self.flavors
         }
 
 class Special(db.Model):
